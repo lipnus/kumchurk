@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "439474738049",
+    "firebase_url": "https://fireapp-9ef47.firebaseio.com",
+    "project_id": "fireapp-9ef47",
+    "storage_bucket": "fireapp-9ef47.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439474738049:android:3f5a5e1c5e7eee6a",
+        "android_client_info": {
+          "package_name": "com.lipnus.firebase_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439474738049-n0d6coqo3tglso7frb97jbvuctv8ejea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWagFvLfgypbAD2cEdTBeeLPkHdqgbVww"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439474738049:android:2e58811bd32c5099",
+        "android_client_info": {
+          "package_name": "com.lipnus.kumchurk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439474738049-n0d6coqo3tglso7frb97jbvuctv8ejea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWagFvLfgypbAD2cEdTBeeLPkHdqgbVww"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lipnus.kumchurk.submenu.NewsFeedActivity">
+
+    <!--상단바-->
+    <include
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        layout="@layout/top_bar"
+        />
+
+        <!--댓글표시-->
+        <ListView
+            android:layout_weight="1"
+            android:id="@+id/cm_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:dividerHeight="1px"
+            android:divider="#a9a9a9" />
+
+
+
+    <!--댓글쓰기부분-->
+    <!--EditText로 포커스가 바로 가는것을 막기 위해 여기에 처음에 포커스가 오도록 한다-->
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:background="#ffffff"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <!--댓글적는곳-->
+        <EditText
+            android:paddingTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/cm_et"
+            android:layout_gravity="bottom"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:hint="댓글입력"
+            android:textSize="16dp"
+            android:background="@null"/>
+
+        <!--중간에 빈공간-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+
+        <!--글 올리기 체크-->
+        <LinearLayout
+            android:onClick="onClick_comment_up_lr"
+            android:layout_gravity="right"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#313131">
+            
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:id="@+id/cm_check_iv"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

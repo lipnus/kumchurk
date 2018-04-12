@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sl_lr"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="horizontal">
+
+    <!--식당사진-->
+    <ImageView
+        android:id="@+id/sl_foodIv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <!--필터-->
+    <LinearLayout
+        android:id="@+id/res_pic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:alpha="0.5"
+        android:background="#000000"
+        android:orientation="vertical" />
+
+    <!--텍스트-->
+    <LinearLayout
+        android:layout_gravity="left|bottom"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sl_res_nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#f3f2f2"
+            android:text="식당이름"/>
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:id="@+id/sl_res_addressTv"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9dp"
+            android:textColor="#f3f2f2"
+            android:text="주소"/>
+    </LinearLayout>
+
+</FrameLayout>
+
+
+
+

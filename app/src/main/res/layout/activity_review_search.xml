@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--포커스가 전체 뷰로 가도록 한다-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </LinearLayout>
+
+
+    <!--검색기능-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--상단메뉴-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/backarrow"
+                android:layout_marginRight="15dp"
+                android:onClick="onClick_BacktoMain"
+                />
+
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:id="@+id/search_et"
+                android:layout_gravity="center_vertical"
+                android:layout_width="220dp"
+                android:layout_height="100dp"
+                android:hint="식당이름"
+                android:textSize="16dp"
+                android:background="@null"
+                />
+        </LinearLayout>
+
+
+
+        <!--검색을 하면 뜨는 리스트-->
+        <include
+            android:id="@+id/include_search"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/search_page" />
+    </LinearLayout>
+
+
+</FrameLayout>

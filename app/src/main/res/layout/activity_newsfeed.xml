@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lipnus.kumchurk.submenu.NewsFeedActivity">
+
+    <!--상단바-->
+    <include
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        layout="@layout/top_bar"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/nf_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#ffffff" />
+
+        <!--//슬라이딩 메뉴-->
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/sliding_menu" />
+
+    </FrameLayout>
+
+</LinearLayout>

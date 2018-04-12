@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--상단바-->
+    <include
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        layout="@layout/top_bar" />
+
+    <!--표시되는 부분-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--노가다로 만든 리스트-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--현재버전-->
+            <FrameLayout
+                android:onClick="onClick_setting_version"
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+
+                <View
+                    android:layout_gravity="top"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#bdbdbd"/>
+
+                <TextView
+                    android:id="@+id/setting_version_tv"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="현재버전"/>
+
+                <View
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#bdbdbd"/>
+
+
+            </FrameLayout>
+
+
+            <!--이용약관-->
+            <FrameLayout
+                android:onClick="onClick_setting_rule"
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="이용약관"/>
+
+                <View
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#bdbdbd"/>
+            </FrameLayout>
+
+
+            <!--개인정보처리방침-->
+            <FrameLayout
+                android:onClick="onClick_setting_personal_info"
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="개인정보처리방침"/>
+
+                <View
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#bdbdbd"/>
+            </FrameLayout>
+
+
+            <!--ABout Kumcurk-->
+            <FrameLayout
+                android:onClick="onClick_setting_about"
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="ABOUT KUMCHURK"/>
+
+                <View
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#bdbdbd"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        <!--가장 하단의 검정로그아웃-->
+        <FrameLayout
+            android:onClick="onClick_setting_logout"
+            android:background="#2b2b2b"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:textColor="#fcfcfc"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="LOGOUT"/>
+
+        </FrameLayout>
+
+
+        <!--//슬라이딩 메뉴-->
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/sliding_menu" />
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+

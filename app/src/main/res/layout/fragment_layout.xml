@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/circle_menu_img_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/circle_menuname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="10pt"
+            android:text="메뉴이름\n\n가격"
+            android:layout_marginBottom="90dp"/>
+
+
+        <TextView
+            android:layout_marginBottom="25dp"
+            android:id="@+id/circle_resname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="5pt"
+            android:text="식당이름"
+            android:layout_gravity="bottom|center_horizontal"
+            android:textColor="#e2e2e2"/>
+
+
+        <ImageView
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:id="@+id/circle_center_iv"
+            android:layout_width="300dp"
+            android:layout_height="300dp" />
+
+    </FrameLayout>
+</LinearLayout>

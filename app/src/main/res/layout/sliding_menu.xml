@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--검정 그림자-->
+    <LinearLayout
+        android:id="@+id/slidingShadowLr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#000000"
+        android:alpha="0.6"
+        android:visibility="gone"/>
+
+    <!--슬라이딩 메뉴-->
+    <LinearLayout
+        android:id="@+id/slidingMenuLr"
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:background="#ffffff"
+        android:visibility="gone">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/sliding_img"/>
+
+    </LinearLayout>
+
+</FrameLayout>

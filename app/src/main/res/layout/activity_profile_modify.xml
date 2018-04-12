@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+
+    <!--본문(처음에 포커스가 여기로 잡히도록 한다)-->
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <!--상단바-->
+        <include
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            layout="@layout/top_bar"
+            />
+
+
+        <!--프사-->
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:id="@+id/pm_profile_iv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:onClick="onClick_pm_selectImage"/>
+
+
+        <TextView
+            android:layout_marginTop="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="사진을 터치"
+            android:textSize="10dp"/>
+
+
+        <!--닉네임-->
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:background="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center">
+
+            <EditText
+                android:singleLine="true"
+                android:background="@null"
+                android:maxLength="8"
+                android:id="@+id/pm_nickname_et"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:textSize="16dp"
+                android:text="아이디"/>
+
+            <TextView
+                android:id="@+id/pm_overlap_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:textColor="#ef3d3d"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--하단의 체크버튼-->
+    <ImageView
+        android:alpha="0.9"
+        android:onClick="onClick_pm_profileModify"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/check_btn"
+        />
+</FrameLayout>

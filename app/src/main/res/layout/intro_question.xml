@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <FrameLayout
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="150dp"
+        android:layout_gravity="bottom|center_horizontal">
+
+        <!--&lt;!&ndash;사각형배경&ndash;&gt;-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#726f6f"-->
+            <!--android:alpha="0.1"/>-->
+
+        <!--텍스트들-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/intro_tv_1"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal|top"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:textColor="#ffffff"
+                android:text="..."/>
+
+            <TextView
+                android:id="@+id/intro_tv_2"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal|top"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/intro_tv_3"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal|top"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/intro_tv_4"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal|top"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+
+        <!--안씀-->
+        <ImageView
+            android:id="@+id/intro_question_iv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="60dp"/>
+
+    </FrameLayout>
+
+
+
+
+
+
+
+    <!--진행버튼-->
+     <LinearLayout
+         android:layout_gravity="bottom|center_horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="100dp"
+         android:layout_marginBottom="20dp">
+
+         <!--다음으로가기-->
+         <TextView
+             android:onClick="onClick_question_answer"
+             android:id="@+id/intro_skip_tv"
+             android:gravity="center"
+             android:layout_weight="1"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:textColor="#f6f6f6"
+             android:textSize="19dp"
+             android:text=""/>
+     </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e4e4">
+
+    <!--이곳에 레이어들이 쌓일것이다-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--[1]중간그림이 들어가는 레이어-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="11">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"/>
+
+            <ImageView
+                android:id="@+id/diagonal_middle_iv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"/>
+
+        </LinearLayout>
+
+        <!--[2]위쪽그림과 아래쪽 그림이 들어가는 레이어-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="46">
+
+            <ImageView
+                android:id="@+id/diagonal_top_iv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="17"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"/>
+
+            <ImageView
+                android:id="@+id/diagonal_bottom_iv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="17"/>
+
+        </LinearLayout>
+
+        <!--[3]검은색필터-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:alpha="0.3"/>
+
+        <!--[4]글자가 들어가는 레이어-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <!--일빠-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/diagonal_top_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8pt"
+                    android:text="첫번째 메뉴"
+                    android:textColor="#f8f7f7"/>
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/diagonal_top2_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="5pt"
+                    android:text="63m, 매스플레이트"
+                    android:textColor="#f8f7f7"/>
+
+
+
+
+            </LinearLayout>
+
+            <!--이빠-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/diagonal_middle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8pt"
+                    android:text="두번째 메뉴"
+                    android:textColor="#f8f7f7"/>
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/diagonal_middle2_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="5pt"
+                    android:text="63m, 매스플레이트"
+                    android:textColor="#f8f7f7"/>
+
+            </LinearLayout>
+
+            <!--삼빠-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/diagonal_bottom_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8pt"
+                    android:text="세번째 메뉴"
+                    android:textColor="#f8f7f7"/>
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/diagonal_bottom2_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="5pt"
+                    android:text="63m, 매스플레이트"
+                    android:textColor="#f8f7f7"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+</LinearLayout>

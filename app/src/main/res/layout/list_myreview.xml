@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/rv_lr"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <!--리뷰사진-->
+        <ImageView
+            android:id="@+id/rv_review_iv"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="70dp"
+            android:layout_height="80dp" />
+
+        <!--메뉴이름, 식당이름-->
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/rv_menu_res_name_tv"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:paddingRight="15dp"
+                android:maxLines="2"
+                android:text="메뉴이름"/>
+
+            <TextView
+                android:layout_marginLeft="14dp"
+                android:id="@+id/rv_info_tv"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9dp"
+                android:text="정보"/>
+
+            <TextView
+                android:layout_marginLeft="14dp"
+                android:id="@+id/rv_date_tv"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9dp"
+                android:text="날짜"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:id="@+id/rv_more_iv"
+            android:padding="15dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

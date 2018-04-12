@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lipnus.kumchurk">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 인터넷권한 -->
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 위치정보활용시 추가 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 위치정보활용시 추가 -->
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- WIFI 상태활용시 추가 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- WIFI 상태활용시 추가 -->
+
+
+    <!-- 전화와 메시지를 보내기 위한 퍼미션 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="d3e92b6fb65c4319fbe6c7307a40b413" />
+
+        <activity android:name=".IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".detailpage.ReviewWrtieActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".submenu.search.SearchActivity" />
+        <activity android:name=".ScrollActivity" />
+        <activity android:name=".join.JoinActivity" />
+        <activity android:name=".join.Join2Activity" />
+        <activity android:name=".join.Join3Activity" />
+        <activity android:name=".map.MapActivity" />
+        <activity android:name=".join.JoinLastActivity" />
+        <activity android:name=".join.JoinUserCheckActivity" />
+        <activity android:name=".submenu.NewsFeedActivity" />
+        <activity android:name=".submenu.AlarmActivity" />
+        <activity android:name=".submenu.ReviewSearchActivity" />
+        <activity android:name=".detailpage.ProfileImgActivity" />
+        <activity android:name=".detailpage.ProfileModifyActivity" />
+        <activity
+            android:name=".detailpage.CommentActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".detailpage.DetailReveiwActivity" />
+        <activity android:name=".submenu.PersonalSpaceActivity" />
+        <activity android:name=".detailpage.ReviewSelectActivity" />
+        <activity android:name=".submenu.search.Search_ResMenuList_Activity" />
+
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".fcm.FcmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".FirebaseActivity" />
+        <activity android:name=".detailpage.introduce.AboutUsActivity" />
+        <activity android:name=".detailpage.introduce.TermsServiceActivity" />
+        <activity android:name=".detailpage.introduce.TermsPersonalActivity" />
+        <activity android:name=".join.TermsAgreeActivity" />
+        <activity android:name=".submenu.SettingActivity"></activity>
+    </application>
+
+</manifest>

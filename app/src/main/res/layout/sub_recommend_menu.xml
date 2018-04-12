@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<HorizontalScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_gravity="bottom"
+android:scrollbars="none"
+android:layout_width="match_parent"
+android:layout_height="300dp">
+
+    <LinearLayout
+        android:gravity="top"
+        android:layout_gravity="bottom"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:padding="20dp"
+        android:orientation="horizontal"
+        android:paddingBottom="100dp">
+
+        //8개의 레이아웃
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:id="@+id/recommendLinear1"
+            android:onClick="onClick_recommend"
+            android:layout_width="160dp"
+            android:layout_height="265dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/recommendIv1"
+                android:layout_width="160dp"
+                android:layout_height="190dp" />
+
+            <TextView
+                android:id="@+id/recommend_nameTv1"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="150dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/recommend_priceTv1"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:id="@+id/recommend_resTv1"
+                android:layout_marginTop="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9dp"/>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:id="@+id/recommendLinear2"
+            android:onClick="onClick_recommend"
+            android:layout_width="160dp"
+            android:layout_height="265dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/recommendIv2"
+                android:layout_width="160dp"
+                android:layout_height="190dp"/>
+
+            <TextView
+                android:id="@+id/recommend_nameTv2"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="150dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/recommend_priceTv2"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:id="@+id/recommend_resTv2"
+                android:layout_marginTop="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9dp"/>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:id="@+id/recommendLinear3"
+            android:onClick="onClick_recommend"
+            android:layout_width="160dp"
+            android:layout_height="265dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/recommendIv3"
+                android:layout_width="160dp"
+                android:layout_height="190dp"/>
+
+            <TextView
+                android:id="@+id/recommend_nameTv3"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="150dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/recommend_priceTv3"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:id="@+id/recommend_resTv3"
+                android:layout_marginTop="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9dp"/>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:id="@+id/recommendLinear4"
+            android:onClick="onClick_recommend"
+            android:layout_width="160dp"
+            android:layout_height="265dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/recommendIv4"
+                android:layout_width="160dp"
+                android:layout_height="190dp"/>
+
+            <TextView
+                android:id="@+id/recommend_nameTv4"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="150dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/recommend_priceTv4"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:id="@+id/recommend_resTv4"
+                android:layout_marginTop="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9dp"/>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:id="@+id/recommendLinear5"
+            android:onClick="onClick_recommend"
+            android:layout_width="160dp"
+            android:layout_height="265dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/recommendIv5"
+                android:layout_width="160dp"
+                android:layout_height="190dp"/>
+
+            <TextView
+                android:id="@+id/recommend_nameTv5"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="150dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/recommend_priceTv5"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:id="@+id/recommend_resTv5"
+                android:layout_marginTop="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9dp"/>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:id="@+id/recommendLinear6"
+            android:onClick="onClick_recommend"
+            android:layout_width="160dp"
+            android:layout_height="265dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/recommendIv6"
+                android:layout_width="160dp"
+                android:layout_height="190dp"/>
+
+            <TextView
+                android:id="@+id/recommend_nameTv6"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="150dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/recommend_priceTv6"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:id="@+id/recommend_resTv6"
+                android:layout_marginTop="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9dp"/>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:id="@+id/recommendLinear7"
+            android:onClick="onClick_recommend"
+            android:layout_width="160dp"
+            android:layout_height="265dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/recommendIv7"
+                android:layout_width="160dp"
+                android:layout_height="190dp"/>
+
+            <TextView
+                android:id="@+id/recommend_nameTv7"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="150dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/recommend_priceTv7"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:id="@+id/recommend_resTv7"
+                android:layout_marginTop="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9dp"/>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/recommendLinear8"
+            android:onClick="onClick_recommend"
+            android:layout_width="160dp"
+            android:layout_height="265dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/recommendIv8"
+                android:layout_width="160dp"
+                android:layout_height="190dp"/>
+
+            <TextView
+                android:id="@+id/recommend_nameTv8"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="150dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/recommend_priceTv8"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:id="@+id/recommend_resTv8"
+                android:layout_marginTop="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</HorizontalScrollView>

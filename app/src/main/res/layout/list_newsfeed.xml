@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!--첫글일때 최상단에 여백주기-->
+    <LinearLayout
+        android:id="@+id/nf_topMarginLr"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <!--최상단 메뉴(메뉴이름, 식당이름, 거리)-->
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!--메뉴이름, 가격, 위치, 거리(2개의 TextView에 다 표시-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/nf_menu_nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="260dp"
+                android:maxLines="2"
+                android:textSize="19dp"
+                android:text="메뉴이름"/>
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:id="@+id/nf_res_nameTv"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9dp"
+                android:text="식당이름"/>
+        </LinearLayout>
+
+        <!--맛 표시-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--맛 아이콘-->
+            <ImageView
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                android:id="@+id/nf_taste_iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <!--메뉴이미지-->
+    <ImageView
+        android:id="@+id/nf_menu_img_Iv"
+        android:layout_width="match_parent"
+        android:layout_height="350dp" />
+
+    <!--하단메뉴(프로필사진, 닉네임, 하트, 빠큐, 공유(예정))-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <!--닉네임과 아이디-->
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="3">
+
+            <!--프로필사진-->
+            <ImageView
+                android:id="@+id/nf_faceIv"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <!--아이디-->
+            <TextView
+                android:id="@+id/nf_nicknameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:text="아이디"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <!--하트, 빠큐, 댓글-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal"
+            android:layout_weight="3">
+
+            <!--하트-->
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:id="@+id/nf_heart_Lr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/nf_heart_iv"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+
+                <TextView
+                    android:id="@+id/nf_heart_tv"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="9dp"
+                    android:text="1"/>
+
+            </LinearLayout>
+
+            <!--뻐큐-->
+            <LinearLayout
+                android:id="@+id/nf_fuck_Lr"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/nf_fuck_iv"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+
+                <TextView
+                    android:id="@+id/nf_fuck_tv"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="9dp"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+            <!--댓글-->
+            <LinearLayout
+                android:id="@+id/nf_comment_Lr"
+                android:layout_marginRight="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/nf_comment_iv"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+
+                <TextView
+                    android:id="@+id/nf_comment_tv"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="9dp"
+                    android:text="0"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--리뷰글-->
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/nf_review_Tv"
+        android:layout_gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="9"
+        android:textSize="12dp"
+        android:maxHeight="150dp"
+        android:text="리뷰내용"/>
+
+    <!--댓글유도-->
+    <TextView
+        android:id="@+id/nf_comment_induce_tv"
+        android:paddingTop="8dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textStyle="bold"
+        android:textColor="#b1b1b1"
+        android:textSize="12dp"/>
+
+    <!--날짜-->
+    <TextView
+        android:id="@+id/nf_date_Tv"
+        android:layout_gravity="left"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8dp"
+        android:text="25분전"/>
+
+</LinearLayout>
+

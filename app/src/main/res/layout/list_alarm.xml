@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+
+    <LinearLayout
+        android:id="@+id/al_lr"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <!--프로필사진-->
+        <ImageView
+            android:id="@+id/al_profile_iv"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <!--댓글-->
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/al_notice_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:paddingRight="8dp"
+                android:textSize="11dp"
+                android:text="XXX님이 회원님의 리뷰를 좋아합니다"/>
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:id="@+id/al_time_tv"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8dp"
+                android:text="10분전"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:id="@+id/al_myreview_iv"
+            android:layout_width="50dp"
+            android:layout_height="40dp" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

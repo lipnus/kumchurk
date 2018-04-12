@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--글쓰는부분-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--메뉴이름-->
+            <TextView
+                android:id="@+id/menuwrite_menuname_Tv"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="어떤 메뉴인가요?"
+                android:textSize = "21dp"/>
+
+            <!--식당이름-->
+            <TextView
+                android:id="@+id/menuwrite_resName_Tv"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="어디서 식사하셨나요?"
+                android:textSize="11dp"/>
+
+            <!--선1-->
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d4d4d4"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--이미지-->
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imageview"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:onClick="onClick_selectImage"/>
+
+
+                    <!--이미지 업로드 오른쪽부분-->
+                    <FrameLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <!--얼굴표정 3개가 들어감-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <!--존맛-->
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:id="@+id/taste1_iv"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:padding="10dp"
+                                android:onClick="onClick_rw_taste"/>
+
+                            <!--맛있따-->
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="16dp"
+                                android:id="@+id/taste2_iv"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:padding="10dp"
+                                android:onClick="onClick_rw_taste"/>
+
+                            <!--쓰레기-->
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="16dp"
+                                android:id="@+id/taste3_iv"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:padding="10dp"
+                                android:onClick="onClick_rw_taste"/>
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+
+
+            </LinearLayout>
+
+
+
+            <!--선2-->
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d4d4d4"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <EditText
+                    android:id="@+id/review_eT"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:singleLine="false"
+                    android:imeOptions="actionDone"
+                    android:gravity="top"
+                    android:hint="메뉴에 대한 리뷰를 작성해주세요!"
+                    android:textColor="#646464"
+                    android:textSize="7pt"
+                    android:background ="@null"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d4d4d4"/>
+
+            <Button
+                android:id="@+id/rw_img_uploaad_bt"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick_reviewUpload_onlyImg"
+                android:text="사진만 올리기"/>
+
+            </LinearLayout>
+    </ScrollView>
+
+
+    <ImageView
+        android:alpha="0.9"
+        android:onClick="onClick_reviewUpload"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/check_btn"
+        />
+</FrameLayout>

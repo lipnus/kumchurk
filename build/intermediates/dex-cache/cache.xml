@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sunpil\.android\build-cache\a4a7d0478e3f227276077b1f8f98e0d118c1c5ad\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="890be6e1e56a883c9b407a11e067a61886dec123">
+        <dex dex="C:\Users\Sunpil\Desktop\AndroidProject\KUMCHURK\app\build\intermediates\pre-dexed\debug\classes_1819760e5305881e8a269f673d6ba32319260226.jar" />
+    </item>
+
+</items>

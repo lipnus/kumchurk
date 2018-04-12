@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--화면레이아웃-->
+        <!--화면레이아웃-->
+        <!--화면레이아웃-->
+        <!--화면레이아웃-->
+        <!--화면레이아웃-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:alpha="0.7"
+            android:visibility="invisible"></LinearLayout>
+
+        <!--다이얼로그-->
+        <search
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:visibility="invisible">
+
+            <!--다이얼로그 내용-->
+
+        </search>
+
+
+    </FrameLayout>
+
+</LinearLayout>
